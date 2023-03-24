@@ -15,6 +15,8 @@
 				//->set_block_name('woocommerce/cart-line-items-block')
 				->get_root()
 				->add_section( $this );
+
+			//add_action('init', array($this, 'enqueue_scripts'));
 		}
 		protected function load_settings(): sv_block_woocommerce_cart_line_items {
 			$this->get_setting( 'font' )
@@ -57,5 +59,13 @@
 			     ->load_type( 'margin' );
 
 			return $this;
+		}
+		public function enqueue_scripts() {
+			if(
+				function_exists('is_cart') && is_cart()
+				|| function_exists('is_checkout') && is_checkout()
+			){
+				parent::enqueue_scripts();
+			}
 		}
 	}
