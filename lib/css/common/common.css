@@ -9,10 +9,14 @@
 	}
 }
 /* Main */
+.wc-block-components-main {
+	order:2;
+}
 @media ( min-width: 1024px ) {
 	.wc-block-components-main {
 		width: calc(100% - 400px - var(--wp--custom--sv-spacing));
 		max-width: 100%;
+		order:1;
 	}
 }
 /* Sidebar */
@@ -20,11 +24,13 @@
 	height: fit-content;
 	border: 2px solid var(--wp--preset--color--grey);
 	padding: var(--wp--custom--sv-spacing) calc(var(--wp--custom--sv-spacing) / 2 );
+	order:1;
 }
 @media ( min-width: 1024px ) {
 	.wc-block-components-sidebar {
 		width: 400px;
 		max-width: 100%;
+		order:2;
 	}
 }
 .wc-block-components-sidebar h2.wp-block-woocommerce-cart-order-summary-heading-block{
@@ -131,9 +137,10 @@
 	margin-bottom:0;
 }
 .wc-block-components-address-form > * > input[type="text"],
-.wc-block-components-address-form .components-combobox-control__suggestions-container{
+.wc-block-components-address-form .components-combobox-control__suggestions-container,
+.wp-block-woocommerce-checkout-contact-information-block .wc-block-components-text-input input{
 	order:2;
-	width:50%;
+	width:70%;
 	position:relative;
 }
 .components-form-token-field__suggestions-list{
@@ -158,11 +165,12 @@
 	padding-bottom: calc(var(--wp--custom--sv-spacing) / 4);
 }
 .wc-block-components-address-form label,
-.wc-block-components-text-input label{
+.wc-block-components-text-input label,
+.wp-block-woocommerce-checkout-contact-information-block .wc-block-components-text-input label{
 	order:1;
 	font-size: var(--wp--preset--font-size--small);
 	color: var(--wp--preset--color--grey-dark);
-	width:50%;
+	width:30%;
 }
 .wc-block-components-address-form .components-base-control__label{
 	margin:0;
@@ -572,10 +580,16 @@ body .wc-block-components-order-summary-item .wc-block-components-order-summary-
 }
 .wc-block-components-radio-control-accordion-option{
 	display:flex;
+	flex-direction:column;
 	gap:var(--wp--custom--sv-spacing);
-	align-items: center;
 	border-bottom:1px solid var(--wp--preset--color--grey);
 	padding:calc(var(--wp--custom--sv-spacing) / 2);
+}
+@media ( min-width: 768px ) {
+	.wc-block-components-radio-control-accordion-option{
+		flex-direction: row;
+		align-items: center;
+	}
 }
 .wp-block-woocommerce-checkout-terms-block a{
 	font-weight:700;
