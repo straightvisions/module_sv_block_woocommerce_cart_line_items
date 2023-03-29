@@ -1,3 +1,4 @@
+/* @todo: Should be splitted into more specfic block modules */
 .wc-block-components-sidebar-layout{
 	display: flex;
 	gap: var(--wp--custom--sv-spacing);
@@ -593,4 +594,82 @@ body .wc-block-components-order-summary-item .wc-block-components-order-summary-
 }
 .wp-block-woocommerce-checkout-terms-block a{
 	font-weight:700;
+}
+
+/* Thank You */
+.woocommerce-order h2{
+	margin-top:0;
+}
+.woocommerce-thankyou-order-received{
+	font-size: var(--wp--preset--font-size--x-large);
+}
+.woocommerce-order > section{
+	border: 1px solid var(--wp--preset--color--grey);
+	padding: var(--wp--custom--sv-spacing) calc(var(--wp--custom--sv-spacing) / 2 );
+	margin: var(--wp--custom--sv-spacing) auto;
+}
+.woocommerce-columns--addresses{
+	display:flex;
+	flex-direction:column;
+	gap:var(--wp--custom--sv-spacing);
+}
+@media ( min-width: 768px ) {
+	.woocommerce-columns--addresses{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+body .woocommerce-table--order-details,
+body .woocommerce-table--order-details tbody,
+body .woocommerce-table--order-details tfoot{
+	display:block;
+}
+body .woocommerce-table--order-details thead{
+	display:none;
+}
+@media ( min-width: 768px ){
+	body .woocommerce-table--order-details thead{
+		display:block;
+	}
+}
+body .woocommerce-table--order-details tr{
+	display:flex;
+	gap:var(--wp--custom--sv-spacing);
+	justify-content: space-between;
+	align-items: center;
+	border-bottom:1px solid var(--wp--preset--color--grey-medium);
+	flex-direction: column;
+	padding:var(--wp--custom--sv-spacing) 0;
+}
+@media ( min-width: 768px ){
+	body .woocommerce-table--order-details tr{
+		flex-direction: row;
+		padding:0;
+	}
+}
+body .woocommerce-table--order-details td,
+body .woocommerce-table--order-details th{
+	display:block;
+	padding:0;
+}
+@media ( min-width: 768px ){
+	body .woocommerce-table--order-details td,
+	body .woocommerce-table--order-details th{
+		padding:var(--wp--custom--sv-spacing) 0;
+	}
+}
+body .woocommerce-table--order-details thead{
+	text-transform:uppercase;
+	font-size:var(--wp--preset--font-size--medium);
+	font-weight:700;
+	text-align: left;
+}
+body .woocommerce-table--order-details .product-name{
+	width:100%;
+}
+@media ( min-width: 768px ){
+	body .woocommerce-table--order-details .product-total{
+		width:200px;
+		text-align: right;
+	}
 }
