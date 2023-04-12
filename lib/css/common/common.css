@@ -673,3 +673,17 @@ body .woocommerce-table--order-details .product-name{
 		text-align: right;
 	}
 }
+body .woocommerce-table--order-details .wc-item-meta{
+	list-style-type:none;
+	margin:0;
+	padding:calc(var(--wp--custom--sv-spacing) / 2) 0 0 0;
+}
+body .woocommerce-table--order-details .wc-item-meta li{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap:var(--wp--custom--sv-spacing);
+}
+body .woocommerce-table--order-details .wc-item-meta p{
+	margin:0;
+}
