@@ -179,7 +179,7 @@
 /* Buttons */
 .wc-block-components-totals-shipping__change-address-button,
 .wp-element-button.wc-block-components-button,
-a[role="button"],
+.wp-site-blocks a[role="button"],
 .wc-block-components-checkout-return-to-cart-button,
 .wc-block-components-order-summary button{
 	display: flex;
