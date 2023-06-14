@@ -373,7 +373,6 @@ body .wc-block-components-order-summary-item__image img{
 	height: 100%;
 }
 /* Item Saving */
-.wc-block-components-sale-badge,
 .wc-block-components-product-metadata__description{
 	display:none;
 }
@@ -686,4 +685,12 @@ body .woocommerce-table--order-details .wc-item-meta li{
 }
 body .woocommerce-table--order-details .wc-item-meta p{
 	margin:0;
+}
+.wc-block-components-sale-badge{
+	display: inline-block;
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--wp--preset--color--black);
+	border: 1px solid var(--wp--preset--color--black);
+	border-radius: 5px;
+	padding: 3px;
 }
