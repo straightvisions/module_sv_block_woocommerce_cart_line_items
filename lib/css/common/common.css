@@ -689,8 +689,8 @@ body .woocommerce-table--order-details .wc-item-meta p{
 .wc-block-components-sale-badge{
 	display: inline-block;
 	font-size: var(--wp--preset--font-size--small);
-	color: var(--wp--preset--color--black);
-	border: 1px solid var(--wp--preset--color--black);
+	color:#699f4c;
+	border: 1px solid #699f4c;
 	border-radius: 5px;
 	padding: 3px;
 }
