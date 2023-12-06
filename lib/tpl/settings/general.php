@@ -9,21 +9,21 @@
 		</div>
 		<div class="sv_setting_flex">
 			<?php
-				echo $module->get_setting( 'label_font' )->form();
-				echo $module->get_setting( 'label_font_size' )->form();
-				echo $module->get_setting( 'label_line_height' )->form();
+				echo $module->get_setting( 'font' )->form();
+				echo $module->get_setting( 'font_size' )->form();
+				echo $module->get_setting( 'line_height' )->form();
 			?>
 		</div>
 		<div class="sv_setting_flex">
 			<?php
-				echo $module->get_setting( 'label_text_color' )->form();
-				echo $module->get_setting( 'label_background_color' )->form();
+				echo $module->get_setting( 'text_color' )->form();
+				echo $module->get_setting( 'background_color' )->form();
 			?>
 		</div>
 		<div class="sv_setting_flex">
 			<?php
-				echo $module->get_setting( 'label_margin' )->form();
-				echo $module->get_setting( 'label_padding' )->form();
+				echo $module->get_setting( 'margin' )->form();
+				echo $module->get_setting( 'padding' )->form();
 			?>
 		</div>
 	</div>
