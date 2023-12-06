@@ -199,7 +199,7 @@
 }
 .wp-element-button.wc-block-cart__submit-button:hover,
 .wc-block-components-totals-shipping__change-address-button:hover,
-a[role="button"]:hover,
+.wc-block-components-main a[role="button"]:hover,
 .wc-block-components-checkout-return-to-cart-button:hover,
 .wc-block-components-order-summary button:hover{
 	background-color: var(--wp--preset--color--orange-dark);
@@ -237,10 +237,10 @@ a[role="button"]:hover,
 	justify-content: space-between;
 	width: 100%;
 }
-input[type="text"],
-input[type="number"],
-input[type="email"],
-textarea{
+.wc-block-components-main input[type="text"],
+.wc-block-components-main input[type="number"],
+.wc-block-components-main input[type="email"],
+.wc-block-components-main textarea{
 	border: 1px solid var(--wp--preset--color--grey);
 	border-radius: 0;
 	font-weight: 700;
@@ -250,10 +250,10 @@ textarea{
 	width: 100%;
 	padding: calc(var(--wp--custom--sv-spacing) / 4);
 }
-input[type="number"]{
+.wc-block-components-main input[type="number"]{
 	text-align: center;
 }
-textarea{
+.wc-block-components-main textarea{
 	height: fit-content;
 	margin: var(--wp--custom--sv-spacing) 0;
 }
